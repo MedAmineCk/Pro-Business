@@ -1,0 +1,160 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Welcome | Consulting</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- responsiveness -->
+    <link rel="stylesheet" href="/css/desktop/contact_us.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="/css/mobile/contact_us.css" media="screen and (max-width: 767px)">
+
+    <!-- addons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <!-- Add your site or application content here -->
+    <header>
+        <div class="logo">
+            <img src="/img/logo/logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Q & A</a></li>
+                <li class="contact_us"><a href="#" class="flex_center">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="nav_tab_icon">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </header>
+    <main>
+        <div class="main_container">
+            <h1>Contact us</h1>
+            <p class="sub">Feel free to contact us any time you want</p>
+        </div>
+    </main>
+    <section class="contact_us">
+        <div class="container">
+            <h1>Let's talk!</h1>
+            <div class="right">
+                <div class="field">
+                    <label for="name">FULL NAME</label> <br>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="field">
+                    <label for="email">EMAIL</label> <br>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="field">
+                    <label for="sub">SUBJECT</label> <br>
+                    <input type="text" name="sub" id="sub">
+                </div>
+                <div class="field">
+                    <label for="message">MESSAGE</label> <br>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <button type="submit" id="sendMailBtn">Send this message</button>
+            </div>
+            <div class="left">
+                <p>hate forms? Instead, send us an <a href="mailto:oriental24h@gmail.com">e-mail</a>.</p>
+                <div class="contact_info">
+                    <div class="item">
+                        <div class="icon">
+                            <span class="material-icons">
+                                phone
+                            </span>
+                        </div>
+                        <p>(+49) 30 901820</p>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <span class="material-icons">
+                                alternate_email
+                            </span>
+                        </div>
+                        <p>custom_email@doamin.com</p>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <span class="material-icons">
+                                place
+                            </span>
+                        </div>
+                        <p>Hey elQods R23 P04, Oujda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="logo">
+            <img src="../img/logo/logo.png" alt="logo">
+        </div>
+        <ul>
+            <li><a href="#">Terme of Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <span class="copyright">© Copyright 2021. by MedAmineCk</span>
+        <div class="social_media">
+            <div class="item flex_center facebook">
+                <img src="../img/social_media/facebook.svg" alt="facebook icon">
+            </div>
+            <div class="item flex_center whatsapp">
+                <img src="../img/social_media/whatsapp.svg" alt="whatsapp icon">
+            </div>
+            <div class="item flex_center instagram">
+                <img src="../img/social_media/instagram.svg" alt="instagram icon">
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="/js/vendor/jquery-3.5.1.min.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/main.js"></script>
+
+    <script>
+        //switch to js files according to device (desk, mobile)
+        if (screen && screen.width < 767) {
+            document.write('<script type="text/javascript" src="/js/mobile.js"><\/script>');
+        } else {
+            document.write('<script type="text/javascript" src="/js/desktop.js"><\/script>');
+        }
+
+    </script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <!--
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  -->
+</body>
+
+</html>
