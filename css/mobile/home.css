@@ -545,7 +545,7 @@ body main .container h1 span {
 }
 
 body main .container section.main-video {
-  background-image: url(/img/video-bg.jpg);
+  background-image: url(../../img/video-bg.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -648,7 +648,7 @@ body main .container .call_action .flag {
   height: 50px;
   width: 50px;
   border-radius: 50px;
-  background-image: url(/img/flag.png);
+  background-image: url(../../img/flag.png);
   background-size: cover;
 }
 
@@ -671,6 +671,6 @@ body main::before {
   display: block;
   width: 100%;
   height: 100%;
-  background-image: url(/img/bg-svg.svg);
+  background-image: url(../../img/bg-svg.svg);
 }
 /*# sourceMappingURL=home.css.map */
