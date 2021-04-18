@@ -26,8 +26,13 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #bcd9de4d;
-        backdrop-filter: blur(24px);
+        background-color: #fff;
+        background-image: url("../../img/bg-svg.svg");
+        @supports (backdrop-filter: blur(24px)) {
+            background: #bcd9de4d;
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
 
         &.active {
             display: flex;

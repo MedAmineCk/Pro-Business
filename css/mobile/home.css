@@ -14,7 +14,7 @@
   display: none;
 }
 
-.abs_center {
+.absolute_center {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -303,9 +303,16 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #bcd9de4d;
-  -webkit-backdrop-filter: blur(24px);
-          backdrop-filter: blur(24px);
+  background-color: #fff;
+  background-image: url("../../img/bg-svg.svg");
+}
+
+@supports ((-webkit-backdrop-filter: blur(24px)) or (backdrop-filter: blur(24px))) {
+  header nav {
+    background: #bcd9de4d;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+  }
 }
 
 header nav.active {
@@ -522,7 +529,7 @@ body main {
 
 body main .container {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   top: 0;
   left: 0;
   width: 100%;
@@ -672,5 +679,49 @@ body main::before {
   width: 100%;
   height: 100%;
   background-image: url(../../img/bg-svg.svg);
+}
+
+body section.video_container {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+body section.video_container .icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  background: #cccccc7a;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  color: #3c3c3c;
+  border: 1px solid #b6b6b6;
+}
+
+body section.video_container .icon:hover {
+  background: #ccccccb1;
+  color: #232323;
+  border: 1px solid #6c6c6c;
+}
+
+body section.video_container .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+
+body section.video_container .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=home.css.map */

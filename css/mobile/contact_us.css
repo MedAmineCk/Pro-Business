@@ -14,7 +14,7 @@
   display: none;
 }
 
-.abs_center {
+.absolute_center {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -303,9 +303,16 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #bcd9de4d;
-  -webkit-backdrop-filter: blur(24px);
-          backdrop-filter: blur(24px);
+  background-color: #fff;
+  background-image: url("../../img/bg-svg.svg");
+}
+
+@supports ((-webkit-backdrop-filter: blur(24px)) or (backdrop-filter: blur(24px))) {
+  header nav {
+    background: #bcd9de4d;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+  }
 }
 
 header nav.active {
