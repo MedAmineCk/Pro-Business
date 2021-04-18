@@ -316,6 +316,95 @@ section.contact_us .container .left p {
   }
 }
 
+.preloader {
+  height: 50px;
+  width: 70px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+i {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: black;
+  border-radius: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -8px 0 0 -8px;
+  opacity: 1;
+  -webkit-transform: translate3d(60px, 0, 0);
+          transform: translate3d(60px, 0, 0);
+  overflow: hidden;
+  text-indent: -9999px;
+  border: 2px solid white;
+}
+
+i:nth-child(1) {
+  background: #d14836;
+  -webkit-animation: google 1.75s ease-in-out infinite;
+          animation: google 1.75s ease-in-out infinite;
+}
+
+i:nth-child(2) {
+  background: #e9b330;
+  -webkit-animation: google 1.75s ease-in-out infinite 0.3s;
+          animation: google 1.75s ease-in-out infinite 0.3s;
+}
+
+i:nth-child(3) {
+  background: #4285f4;
+  -webkit-animation: google 1.75s ease-in-out infinite 0.6s;
+          animation: google 1.75s ease-in-out infinite 0.6s;
+}
+
+@-webkit-keyframes google {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(60px, 0, 0);
+            transform: translate3d(60px, 0, 0);
+  }
+  30% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-300px, 0, 0);
+            transform: translate3d(-300px, 0, 0);
+  }
+}
+
+@keyframes google {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(60px, 0, 0);
+            transform: translate3d(60px, 0, 0);
+  }
+  30% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-300px, 0, 0);
+            transform: translate3d(-300px, 0, 0);
+  }
+}
+
 header {
   background: #fefdff;
   width: 100%;

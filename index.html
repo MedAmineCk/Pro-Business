@@ -31,6 +31,16 @@
 </head>
 
 <body>
+  <div class="preloader-container">
+    <div class="logo">
+      <img src="./img/logo/logo.png" alt="logo">
+    </div>
+    <div class="preloader">
+      <i>.</i>
+      <i>.</i>
+      <i>.</i>
+    </div>
+  </div>
 
   <!-- Add your site or application content here -->
   <header>
@@ -170,6 +180,10 @@
       document.write('<script type="text/javascript" src="js/desktop.js"><\/script>');
     }
 
+    //hide preloader
+    $(window).ready(function () {
+      $('.preloader-container').fadeOut('slow');
+    });
   </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
