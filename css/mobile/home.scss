@@ -31,76 +31,8 @@ body {
                 }
             }
 
-            section.main-video {
-                background-image: url(../../img/video-bg.jpg);
-                background-size: cover;
-                background-position: center;
-                $_size: 350px;
-                width: 100%;
-                height: $_size;
-                margin: 20px auto;
-                border-radius: 12px;
-                position: relative;
-                overflow: hidden;
-                &:before {
-                    content: "";
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgba(4, 0, 71, 0.45);
-                }
-
-                .player-btn_container {
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-
-                    .player-btn {
-                        $_size: 80px;
-                        height: $_size;
-                        width: $_size;
-                        border-radius: $_size;
-                        background: white;
-                        cursor: pointer;
-                        &:hover {
-                            animation-name: rubberBand;
-                        }
-                        &::before {
-                            content: "";
-                            display: block;
-                            background: white;
-                            $differance: 25px;
-                            height: $_size + $differance;
-                            width: $_size + $differance;
-                            border-radius: $_size;
-                            opacity: 0.2;
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            z-index: 1;
-                        }
-                        &::after {
-                            content: "";
-                            display: block;
-                            $differance: 25px;
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            z-index: 1;
-                            width: 0px;
-                            height: 0px;
-                            $_border_height: 14px;
-                            $_border_width: 24px;
-                            border-top: $_border_height solid transparent;
-                            border-bottom: $_border_height solid transparent;
-                            border-left: $_border_width solid colors(main);
-                        }
-                    }
-                }
+            .main-video {
+                height: 340px;
             }
 
             p {
@@ -153,51 +85,6 @@ body {
             width: 100%;
             height: 100%;
             background-image: url(../../img/bg-svg.svg);
-        }
-    }
-    section.video_container {
-        position: fixed;
-        z-index: 3;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: #fff;
-
-        .icon {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            cursor: pointer;
-            background: #cccccc7a;
-            $_size: 35px;
-            width: $_size;
-            height: $_size;
-            border-radius: $_size;
-            color: #3c3c3c;
-            border: 1px solid #b6b6b6;
-            &:hover {
-                background: #ccccccb1;
-                color: #232323;
-                border: 1px solid #6c6c6c;
-            }
-        }
-
-        .videoWrapper {
-            padding-bottom: 55.25%;
-            height: 0;
-            position: absolute;
-            top: 50%;
-            z-index: 2;
-            width: 100%;
-
-            iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
         }
     }
 }

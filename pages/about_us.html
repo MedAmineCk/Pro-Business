@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Contact Us</title>
+    <title>About Us</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="../css/style.css">
 
     <!-- responsiveness -->
-    <link rel="stylesheet" href="../css/desktop/contact_us.css" media="screen and (min-width: 820px)">
-    <link rel="stylesheet" href="../css/mobile/contact_us.css" media="screen and (max-width: 820px)">
+    <link rel="stylesheet" href="../css/desktop/page.css" media="screen and (min-width: 820px)">
+    <link rel="stylesheet" href="../css/mobile/page.css" media="screen and (max-width: 820px)">
 
     <!-- addons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -51,8 +51,8 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="./about_us.html">About</a></li>
-                <li class="contact_us"><a href="#" class="flex_center">Contact us</a></li>
+                <li><a href="#" class="active">About</a></li>
+                <li class="contact_us"><a href="./contact_us.html" class="flex_center">Contact us</a></li>
             </ul>
         </nav>
         <div class="nav_tab_icon">
@@ -63,63 +63,45 @@
     </header>
     <main>
         <div class="main_container">
-            <h1>Contact us</h1>
-            <p class="sub">Feel free to contact us any time you want</p>
+            <h1>About us</h1>
+            <p class="sub">WE ARE CONSTANTLY INNOVATING
+                AND CREATIVE</p>
+            <section class="ui-card">
+                <h2>Who We Are</h2>
+                <section class="main-video">
+                    <div class="player-btn_container flex_center">
+                        <div class="player-btn animated"></div>
+                    </div>
+                </section>
+                <section class="video_container hidden">
+                    <div class="icon close flex_center" onclick="close_video();">
+                        <span class="material-icons">
+                            close_fullscreen
+                        </span>
+                    </div>
+                    <div class="lds-ripple absolute_center">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="videoWrapper absolute_center">
+                        <!--here will display a video from youtube embade js-->
+                    </div>
+                </section>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum lobortis eget ultricies nisl, ac.
+                    Semper
+                    sed mauris pellentesque eget iaculis enim. Amet, mi in commodo, sapien, dictumst. Ac mauris ultrices
+                    a
+                    nibh
+                    imperdiet neque, molestie sed pharetra.</p>
+                <div class="btns">
+                    <div class="btn contact_us flex_center" onclick="window.location.href='./contact_us.html'">Contact
+                        us</div>
+                    <div class=" btn learn_more flex_center">Learn more</div>
+                </div>
+            </section>
         </div>
+
     </main>
-    <section class="contact_us">
-        <div class="container">
-            <h1>Let's talk!</h1>
-            <div class="right">
-                <div class="field">
-                    <label for="name">FULL NAME</label> <br>
-                    <input type="text" name="name" id="name">
-                </div>
-                <div class="field">
-                    <label for="email">EMAIL</label> <br>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="field">
-                    <label for="sub">SUBJECT</label> <br>
-                    <input type="text" name="sub" id="sub">
-                </div>
-                <div class="field">
-                    <label for="message">MESSAGE</label> <br>
-                    <textarea name="message" id="message"></textarea>
-                </div>
-                <button type="submit" id="sendMailBtn">Send this message</button>
-            </div>
-            <div class="left">
-                <p>hate forms? Instead, send us an <a href="mailto:oriental24h@gmail.com">e-mail</a>.</p>
-                <div class="contact_info">
-                    <div class="item">
-                        <div class="icon">
-                            <span class="material-icons">
-                                phone
-                            </span>
-                        </div>
-                        <p>(+49) 30 901820</p>
-                    </div>
-                    <div class="item">
-                        <div class="icon">
-                            <span class="material-icons">
-                                alternate_email
-                            </span>
-                        </div>
-                        <p>custom_email@doamin.com</p>
-                    </div>
-                    <div class="item">
-                        <div class="icon">
-                            <span class="material-icons">
-                                place
-                            </span>
-                        </div>
-                        <p>Hey elQods R23 P04, Oujda</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <footer>
         <div class="logo">
             <img src="../img/logo/logo.png" alt="logo">

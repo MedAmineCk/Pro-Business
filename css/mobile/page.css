@@ -838,93 +838,30 @@ footer .social_media .item.instagram {
 }
 
 body main {
-  width: 100%;
-  height: 100vh;
-  min-height: 800px;
+  background-image: url(../../img/bg-svg.svg);
 }
 
-body main .container {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+body main .main_container {
   background: rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-  padding: 80px 20px 0 20px;
+  padding: 80px 0 0 0;
 }
 
-body main .container h1 {
-  font-size: 30px;
-  font-weight: normal;
+body main .main_container > h1 {
+  font-size: 36px;
+  font-weight: bolder;
+  text-align: center;
 }
 
-body main .container h1 span {
-  font-family: "Montserrat", sans-serif;
-  font-size: 44px;
-  font-weight: 700;
-}
-
-body main .container .main-video {
-  height: 340px;
-}
-
-body main .container p {
-  font-size: 22px;
+body main .main_container > p {
+  font-size: 18px;
   text-align: center;
   margin-bottom: 20px;
 }
 
-body main .container .call_action {
-  height: 60px;
-  width: 100%;
-  max-width: 350px;
-  border-radius: 60px;
-  margin: 0 auto;
-  padding: 10px;
-  background: #fff;
-  -webkit-box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.14);
-          box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.14);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+body main .main_container section.contact_us {
+  position: absolute;
+  left: 0;
 }
-
-body main .container .call_action .flag {
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  background-image: url(../../img/flag.png);
-  background-size: cover;
-}
-
-body main .container .call_action .phone {
-  font-size: 18px;
-}
-
-body main .container .call_action .label {
-  height: 50px;
-  background: #3894ff;
-  text-align: center;
-  color: #fff;
-  border-radius: 50px;
-  padding: 4px;
-  font-size: 14px;
-}
-
-body main::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: url(../../img/bg-svg.svg);
-}
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=page.css.map */
