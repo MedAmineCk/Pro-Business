@@ -184,9 +184,12 @@ body {
         }
 
         .videoWrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 */
+            padding-bottom: 55.25%;
             height: 0;
+            position: absolute;
+            top: 50%;
+            z-index: 2;
+            width: 100%;
 
             iframe {
                 position: absolute;
