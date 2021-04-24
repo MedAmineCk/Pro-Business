@@ -32,7 +32,7 @@
 
 <body>
   <!--Preloader-->
-  <div class="preloader-container">
+  <div class="preloader-container hidden">
     <div class="logo">
       <img src="./img/logo/logo.png" alt="logo">
     </div>
@@ -50,8 +50,10 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="./pages/about_us.html">About</a></li>
+        <div class="main-menu">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="./pages/about_us.html">About</a></li>
+        </div>
         <li class="contact_us"><a href="./pages/contact_us.html" class="flex_center">Contact us</a></li>
       </ul>
     </nav>
@@ -70,11 +72,17 @@
           <div class="player-btn animated"></div>
         </div>
       </section>
-      <p>we bring everything that's required to build websites and apps </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Quibusdam ipsam magni tempora perferendis.</p>
       <div class="call_action">
         <div class="flag"></div>
         <div class="phone">+49 30 901820</div>
         <div class="label flex_center">Get early access</div>
+      </div>
+      <div class="down flex_center animated">
+        <span class="material-icons">
+          expand_more
+        </span>
       </div>
     </div>
   </main>
@@ -96,51 +104,53 @@
   <section class="contact_us">
     <div class="container">
       <h1>Let's talk!</h1>
-      <div class="right">
-        <div class="field">
-          <label for="name">FULL NAME</label> <br>
-          <input type="text" name="name" id="name">
-        </div>
-        <div class="field">
-          <label for="email">EMAIL</label> <br>
-          <input type="email" name="email" id="email">
-        </div>
-        <div class="field">
-          <label for="sub">SUBJECT</label> <br>
-          <input type="text" name="sub" id="sub">
-        </div>
-        <div class="field">
-          <label for="message">MESSAGE</label> <br>
-          <textarea name="message" id="message"></textarea>
-        </div>
-        <button type="submit" id="sendMailBtn">Send this message</button>
-      </div>
-      <div class="left">
-        <p>hate forms? Instead, send us an <a href="mailto:oriental24h@gmail.com">e-mail</a>.</p>
-        <div class="contact_info">
-          <div class="item">
-            <div class="icon">
-              <span class="material-icons">
-                phone
-              </span>
-            </div>
-            <p>(+49) 30 901820</p>
+      <div class="main_contact_container">
+        <div class="right">
+          <div class="field">
+            <label for="name">FULL NAME</label> <br>
+            <input type="text" name="name" id="name">
           </div>
-          <div class="item">
-            <div class="icon">
-              <span class="material-icons">
-                alternate_email
-              </span>
-            </div>
-            <p>custom_email@doamin.com</p>
+          <div class="field">
+            <label for="email">EMAIL</label> <br>
+            <input type="email" name="email" id="email">
           </div>
-          <div class="item">
-            <div class="icon">
-              <span class="material-icons">
-                place
-              </span>
+          <div class="field">
+            <label for="sub">SUBJECT</label> <br>
+            <input type="text" name="sub" id="sub">
+          </div>
+          <div class="field">
+            <label for="message">MESSAGE</label> <br>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <button type="submit" id="sendMailBtn">Send this message</button>
+        </div>
+        <div class="left">
+          <p class="sub_hint">hate forms? Instead, send us an <a href="mailto:support@pro-businesss.com">e-mail</a>.</p>
+          <div class="contact_info">
+            <div class="item">
+              <div class="icon">
+                <span class="material-icons">
+                  phone
+                </span>
+              </div>
+              <p>(+212) 602-166814</p>
             </div>
-            <p>Hey elQods R23 P04, Oujda</p>
+            <div class="item">
+              <div class="icon">
+                <span class="material-icons">
+                  alternate_email
+                </span>
+              </div>
+              <p>support@pro-businesss.com</p>
+            </div>
+            <div class="item">
+              <div class="icon">
+                <span class="material-icons">
+                  place
+                </span>
+              </div>
+              <p>Hey elQods R23 P04, Oujda</p>
+            </div>
           </div>
         </div>
       </div>
@@ -148,7 +158,7 @@
   </section>
   <footer>
     <div class="logo">
-      <img src="img/logo/logo.png" alt="logo">
+      <img src="./img/logo/logo.png" alt="logo">
     </div>
     <ul>
       <li><a href="#">Terme of Services</a></li>
@@ -156,14 +166,15 @@
     </ul>
     <span class="copyright">© Copyright 2021. by MedAmineCk</span>
     <div class="social_media">
-      <div class="item flex_center facebook">
-        <img src="img/social_media/facebook.svg" alt="facebook icon">
+      <div class="item flex_center facebook"
+        onclick="window.location.href='https://www.facebook.com/Pro-Businesss-100759948397480'">
+        <img src="../img/social_media/facebook.svg" alt="facebook icon">
       </div>
       <div class="item flex_center whatsapp">
-        <img src="img/social_media/whatsapp.svg" alt="whatsapp icon">
+        <img src="../img/social_media/whatsapp.svg" alt="whatsapp icon">
       </div>
       <div class="item flex_center instagram">
-        <img src="img/social_media/instagram.svg" alt="instagram icon">
+        <img src="../img/social_media/instagram.svg" alt="instagram icon">
       </div>
     </div>
   </footer>

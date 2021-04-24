@@ -28,6 +28,20 @@
     }
 }
 
+@keyframes shakeY {
+    20%,
+    100% {
+        transform: translate3d(0, -10px, 0);
+    }
+
+    0% {
+        transform: translateZ(0);
+    }
+    10% {
+        transform: translate3d(0, 10px, 0);
+    }
+}
+
 section.contact_us {
     width: 100%;
     .container {

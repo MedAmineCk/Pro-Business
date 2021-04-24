@@ -16,6 +16,11 @@ $medias: (
   instagram: #e4405f,
 );
 
+$margins: (
+  mobile: 20px,
+  desktop: 60px,
+);
+
 $shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
 
 @function colors($color-name) {
@@ -28,6 +33,10 @@ $shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
 
 @function medias($color-name) {
   @return map-get($map: $medias, $key: $color-name);
+}
+
+@function margins($devis-name) {
+  @return map-get($map: $margins, $key: $devis-name);
 }
 
 $tablet: 1134px;

@@ -1,0 +1,36 @@
+@import "../variables";
+@import "../default";
+@import "../modules";
+@import "./modules";
+@import "./header";
+@import "./footer";
+
+body {
+    $header_height: 80px;
+
+    main {
+        background-image: url(../../img/bg-svg.svg);
+
+        .main_container {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(4px);
+            padding: $header_height 0 0 0;
+
+            & > h1 {
+                font-size: 36px;
+                font-weight: bolder;
+                text-align: center;
+            }
+            & > p {
+                font-size: 18px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            section.contact_us {
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+}

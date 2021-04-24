@@ -1,0 +1,28 @@
+section.contact_us {
+    width: 80%;
+    margin: 0 auto;
+    h1 {
+        text-align: center;
+    }
+    .main_contact_container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .right,
+        .left {
+            width: 100%;
+            padding: 20px 60px;
+        }
+
+        .left {
+            p.sub_hint {
+                margin-top: 35px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+section.main-video {
+    width: 80%;
+}
