@@ -640,6 +640,48 @@ section.main-video {
   width: 80%;
 }
 
+section.ui-card {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 4px;
+  border: 2px solid #f9f9f9;
+  background-color: #ffffff;
+}
+
+section.ui-card .btns {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+section.ui-card .btns .btn {
+  width: 120px;
+  height: 35px;
+  border-radius: 4px;
+}
+
+section.ui-card .btns .btn.contact_us {
+  margin-right: 20px;
+  color: #fff;
+  background: #8e2de2;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#4a00e0), to(#8e2de2));
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 header {
   background: #fefdff;
   width: 100%;
